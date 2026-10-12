@@ -1,0 +1,41 @@
+{
+  "name": "@sindhujaks/totp",
+  "version": "1.0.0",
+  "description": "Zero-dependency TypeScript implementation of TOTP/HOTP two-factor authentication (RFC 6238 / RFC 4226), verified against the official test vectors.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "node --test \"test/**/*.test.ts\"",
+    "build": "tsc",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "totp",
+    "hotp",
+    "2fa",
+    "mfa",
+    "two-factor",
+    "authentication",
+    "rfc6238",
+    "rfc4226"
+  ],
+  "license": "MIT",
+  "author": "Sindhuja Kalisrinivasan",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}
