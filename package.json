@@ -30,7 +30,7 @@
     "rfc4226"
   ],
   "license": "MIT",
-  "author": "Sindhuja Kalisrinivasan",
+  "author": "Sindhuja Kali Srinivasan",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sindhujaIBM/totp-toolkit.git"
